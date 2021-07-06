@@ -2,7 +2,8 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:hireatutor/src/tutor.dart';
-import 'package:hireatutor/resources/values/colors.dart';
+// import 'package:hireatutor/resources/values/colors.dart';
+import 'constants.dart';
 
 class TutorSearch extends SearchDelegate<Tutor> {
   final Stream<UnmodifiableListView<Tutor>> tutors;

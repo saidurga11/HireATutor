@@ -2,10 +2,13 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:hireatutor/profile_screen.dart';
+import 'package:hireatutor/routes.dart';
+import 'package:hireatutor/screens/sign_in/sign_in_screen.dart';
 import 'package:hireatutor/search.dart';
 import 'package:hireatutor/src/tutor_bloc.dart';
 import 'package:hireatutor/src/tutor.dart';
-import 'package:hireatutor/resources/values/colors.dart';
+// import 'package:hireatutor/resources/values/colors.dart';
+import 'constants.dart';
 
 import 'package:cuberto_bottom_bar/cuberto_bottom_bar.dart';
 import 'package:filter_list/filter_list.dart';
@@ -26,12 +29,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'Hire A Tutor', bloc: this.bloc),
+      // home: MyHomePage(title: 'Hire A Tutor', bloc: this.bloc),
+      initialRoute: SignInScreen.routeName,
+      routes: routes,
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  static String routeName = "/home";
   MyHomePage({Key key, this.title, this.bloc}) : super(key: key);
 
   final String title;

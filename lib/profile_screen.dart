@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hireatutor/resources/values/colors.dart';
+// import 'package:hireatutor/resources/values/colors.dart';
+import 'constants.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key key}) : super(key: key);
